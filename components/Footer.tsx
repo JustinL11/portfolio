@@ -3,6 +3,11 @@ import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 
 const Footer = () => {
+  const handleIconClick = (url) => {
+    console.log(`Redirecting to: ${url}`);
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
@@ -37,15 +42,13 @@ const Footer = () => {
 
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
-            <a
+            <div
               key={info.id}
-              href={info.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => handleIconClick(info.url)}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
               <img src={info.img} alt="icons" width={20} height={20} />
-            </a>
+            </div>
           ))}
         </div>
       </div>
