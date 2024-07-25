@@ -3,7 +3,7 @@ import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 
 const Footer = () => {
-  const handleIconClick = (url) => {
+  const handleIconClick = (url: string) => {
     console.log(`Redirecting to: ${url}`);
     window.open(url, "_blank", "noopener,noreferrer");
   };
