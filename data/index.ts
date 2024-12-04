@@ -100,7 +100,7 @@ export const projects = [
     des: "PassGen is a user-friendly tool designed to create secure and unique passwords. The software generates unique, random passwords that are challenging for hackers to crack, thereby enhancing user account security. Users have the freedom to customize their passwords based on their preferences. They can specify the password's length, choose whether to include uppercase letters or numbers, and even incorporate personal text, such as a favorite movie title or a meaningful phrase.",
     img: "./passgen.png",
     iconLists: ["./js_icon.svg", "./mysql.svg", "./fig.svg", "./git_icon.svg", "./gitlab.svg"],
-    link: "https://github.com/ZakFaarah/PassGen-main",
+    link: "https://github.com/JustinL11/PassGen",
   },
 ];
 
